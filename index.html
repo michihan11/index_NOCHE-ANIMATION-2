@@ -31,14 +31,21 @@ body { background-color: #98cfb2; }
     position: absolute; }
 
 .ball.first{ animation: firstball .9s alternate ease-in infinite; }
-
+.ball.first{
+  animation: firstball .9s alternate infinite;
+              }
+    
   @keyframes firstball{
     0%{ transform: rotate(35deg); }
     50%{ transform: rotate(0deg); } }
 
   .ball.last{ animation: lastball .9s alternate ease-out infinite; }
-
+  .ball.last{
+  animation: lastball .9s alternate infinite;
+  }
+    
   @keyframes lastball
+    0%{ transition: rotate(0deg): }
     50%{ transform: rotate(0deg); }
     100%{ transform: rotate(-35deg); } }
 </style>
