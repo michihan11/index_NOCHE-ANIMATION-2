@@ -13,7 +13,7 @@ body { background-color: #98cfb2; }
     border-radius: 5%;
     align-items: center;
     border-top: 15px solid #eee7d5;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%): }
 
 .pendulum_box{ display: flex;
     padding: 120px 0 0 10px;
@@ -31,14 +31,12 @@ body { background-color: #98cfb2; }
     position: absolute; }
 
 .ball.first{ animation: firstball .9s alternate ease-in infinite; }
-.ball.last{ animation : lastball .9s alternate ease-out infinite; }
     
   @keyframes firstball{
     0%{ transform: rotate(35deg); }
     50%{ transform: rotate(0deg); } }
 
   .ball.last{ animation: lastball .9s alternate ease-out infinite; }
-  .ball.first{ animation: firstball .9s alternate ease-in infinite; }
     
   @keyframes lastball
     50%{ transform: rotate(0deg); }
